@@ -16,7 +16,7 @@ Add the dependency to your `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.YOUR_GITHUB_USERNAME:ComposeRefresh:1.0.0")
+    implementation("com.github.barh0m1977:ComposeRefresh:1.0.0")
 }
 ```
 
