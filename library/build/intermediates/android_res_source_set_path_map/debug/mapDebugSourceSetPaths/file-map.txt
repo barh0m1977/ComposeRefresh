@@ -1,0 +1,8 @@
+com.ibrahim.composescrollrefresh.library-pngs-0 D:\resume projects\ComposeRefresh\library\build\generated\res\pngs\debug
+com.ibrahim.composescrollrefresh.library-updated_navigation_xml-1 D:\resume projects\ComposeRefresh\library\build\generated\updated_navigation_xml\debug
+com.ibrahim.composescrollrefresh.library-mergeDebugResources-2 D:\resume projects\ComposeRefresh\library\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.ibrahim.composescrollrefresh.library-mergeDebugResources-3 D:\resume projects\ComposeRefresh\library\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.ibrahim.composescrollrefresh.library-debug-4 D:\resume projects\ComposeRefresh\library\build\intermediates\merged_res\debug\mergeDebugResources
+com.ibrahim.composescrollrefresh.library-debug-5 D:\resume projects\ComposeRefresh\library\build\intermediates\packaged_res\debug\packageDebugResources
+com.ibrahim.composescrollrefresh.library-debug-6 D:\resume projects\ComposeRefresh\library\src\debug\res
+com.ibrahim.composescrollrefresh.library-main-7 D:\resume projects\ComposeRefresh\library\src\main\res
