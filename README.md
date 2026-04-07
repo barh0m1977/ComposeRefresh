@@ -1,6 +1,7 @@
 # Compose Scroll Refresh
 
 A lightweight, secure, and customizable Pull-to-Refresh library for Jetpack Compose.
+## [![](https://jitpack.io/v/barh0m1977/ComposeRefresh.svg)](https://jitpack.io/#barh0m1977/ComposeRefresh)
 
 ## 🚀 Installation
 
@@ -16,7 +17,7 @@ Add the dependency to your `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.barh0m1977:ComposeRefresh:1.0.0")
+    implementation("com.github.barh0m1977:ComposeRefresh:1.0.1")
 }
 ```
 
