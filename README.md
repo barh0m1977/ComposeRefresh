@@ -1,7 +1,7 @@
 # Compose Scroll Refresh
 
 A lightweight, secure, and customizable Pull-to-Refresh library for Jetpack Compose.
-
+[![](https://jitpack.io/v/barh0m1977/ComposeRefresh.svg)](https://jitpack.io/#barh0m1977/ComposeRefresh)
 ## 🚀 Installation
 
 Add JitPack to your `settings.gradle.kts`:
