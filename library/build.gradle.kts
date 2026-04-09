@@ -47,7 +47,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.ibrahim"
                 artifactId = "compose-scroll-refresh"
-                version = "1.0.0"
+                version = "1.1.0"
             }
         }
     }
