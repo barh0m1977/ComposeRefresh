@@ -20,17 +20,7 @@ import kotlin.math.abs
 import kotlin.math.cos
 import kotlin.math.sin
 
-// NOTE: Spring styles also consume a `scale` value that is driven by
-// animateFloatAsState with spring physics. Because DrawScope.draw() is
-// called from within Canvas (not a @Composable), the spring-animated scale
-// must be computed BEFORE entering the Canvas and passed as a constructor
-// property or injected externally.  The host (RefreshIndicatorHost) reads
-// `style.scaleProvider` if the style implements [SpringScaleProvider].
-//
-// For simplicity here we derive a pseudo-spring from the pull progress so
-// styles compile without requiring a second composition layer. Replace
-// `pseudoScale` with a real animateFloatAsState in RefreshIndicatorHost
-// when hooking up fully.
+
 
 private fun pseudoScale(state: RefreshScrollState) =
     if (state.isRefreshing) 1.2f else state.progress.coerceAtMost(1f)
