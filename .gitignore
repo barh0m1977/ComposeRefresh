@@ -12,3 +12,61 @@ local.properties
 *.project
 .settings/
 .classpath
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Android build outputs
+app/build/
+library/build/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kotlin / Java
+*.class
+*.jar
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio navigation editor
+.navigation/
+
+# Android Studio caches
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Gradle wrapper logs
+gradle-app.setting
+
+# Agent / AI folders
+.agent/
+
+# Temporary files
+*.tmp
+*.temp
