@@ -44,7 +44,7 @@ private fun DrawScope.waveBase(state: RefreshScrollState): Triple<Float, Float, 
 // ─── 1. Classic filled sine ───────────────────────────────────────────────────
 
 class ClassicWaveStyle : RefreshIndicatorStyle {
-    override val key = "Classic"
+    override val key = "Wave.Classic"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -57,7 +57,7 @@ class ClassicWaveStyle : RefreshIndicatorStyle {
 // ─── 2. Double overlapping waves ─────────────────────────────────────────────
 
 class DoubleWaveStyle : RefreshIndicatorStyle {
-    override val key = "Double"
+    override val key = "Wave.Double"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -75,7 +75,7 @@ class DoubleWaveStyle : RefreshIndicatorStyle {
 // ─── 3. Stroke-only sine ─────────────────────────────────────────────────────
 
 class StrokeWaveStyle : RefreshIndicatorStyle {
-    override val key = "Stroke"
+    override val key = "Wave.Stroke"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -92,7 +92,7 @@ class StrokeWaveStyle : RefreshIndicatorStyle {
 // ─── 4. Zigzag ───────────────────────────────────────────────────────────────
 
 class ZigzagWaveStyle : RefreshIndicatorStyle {
-    override val key = "Zigzag"
+    override val key = "Wave.Zigzag"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -117,7 +117,7 @@ class ZigzagWaveStyle : RefreshIndicatorStyle {
 // ─── 5. Ripple rings ─────────────────────────────────────────────────────────
 
 class RippleWaveStyle : RefreshIndicatorStyle {
-    override val key = "Ripple"
+    override val key = "Wave.Ripple"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -132,10 +132,10 @@ class RippleWaveStyle : RefreshIndicatorStyle {
     }
 }
 
-// ─── 6. Square wave ──────────────────────────────────────────────────────────
+// ─── 6. Square Wave ──────────────────────────────────────────────────────────
 
 class SquareWaveStyle : RefreshIndicatorStyle {
-    override val key = "Square"
+    override val key = "Wave.Square"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -160,7 +160,7 @@ class SquareWaveStyle : RefreshIndicatorStyle {
 // ─── 7. Bouncing dots ────────────────────────────────────────────────────────
 
 class BouncingDotsWaveStyle : RefreshIndicatorStyle {
-    override val key = "Dots"
+    override val key = "Wave.Dots"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -178,7 +178,7 @@ class BouncingDotsWaveStyle : RefreshIndicatorStyle {
 // ─── 8. Layered waves ────────────────────────────────────────────────────────
 
 class LayeredWaveStyle : RefreshIndicatorStyle {
-    override val key = "Layered"
+    override val key = "Wave.Layered"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000, AnimSlot.PHASE_1400, AnimSlot.PHASE_1800)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -199,7 +199,7 @@ class LayeredWaveStyle : RefreshIndicatorStyle {
 // ─── 9. Cosine ───────────────────────────────────────────────────────────────
 
 class CosineWaveStyle : RefreshIndicatorStyle {
-    override val key = "Cosine"
+    override val key = "Wave.Cosine"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -220,7 +220,7 @@ class CosineWaveStyle : RefreshIndicatorStyle {
 // ─── 10. Reverse (from top) ──────────────────────────────────────────────────
 
 class ReverseWaveStyle : RefreshIndicatorStyle {
-    override val key = "Reverse"
+    override val key = "Wave.Reverse"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {

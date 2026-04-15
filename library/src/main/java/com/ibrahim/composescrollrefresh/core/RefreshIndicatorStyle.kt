@@ -35,14 +35,14 @@ interface RefreshIndicatorStyle {
 
 /** Which pre-baked animation values a style may consume. */
 enum class AnimSlot {
-    PHASE_1000,   // 0→2π  in 1 000 ms  (fast wave / rotation)
+    PHASE_1000,   // 0→2π  in 1 000 ms  (fast Wave / rotation)
     PHASE_1400,   // 0→2π  in 1 400 ms
     PHASE_1800,   // 0→2π  in 1 800 ms
     ROTATION_1000,// 0→360 in 1 000 ms
     ROTATION_1400,// 360→0 in 1 400 ms  (counter-rotation)
     ROTATION_700, // 0→360 in   700 ms  (fast)
     PULSE_1200,   // 0→1   in 1 200 ms  (generic pulse)
-    FLOAT_2000,   // 0→100 in 2 000 ms  (bubble float)
+    FLOAT_2000,   // 0→100 in 2 000 ms  (Bubble float)
     FLOAT_3000,   // 0→1   in 3 000 ms  (slow float)
 }
 

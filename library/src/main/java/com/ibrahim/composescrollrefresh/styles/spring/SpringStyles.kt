@@ -30,7 +30,7 @@ private fun DrawScope.color() = androidx.compose.ui.graphics.Color(0xFF7D5260)
 // ─── 1. Classic springy circle ───────────────────────────────────────────────
 
 class ClassicSpringStyle : RefreshIndicatorStyle {
-    override val key = "Classic"
+    override val key = "Spring.Classic"
     override val requiredAnims = emptySet<AnimSlot>()
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -42,10 +42,10 @@ class ClassicSpringStyle : RefreshIndicatorStyle {
     }
 }
 
-// ─── 2. Coil spring ──────────────────────────────────────────────────────────
+// ─── 2. Coil Spring ──────────────────────────────────────────────────────────
 
 class CoilSpringStyle : RefreshIndicatorStyle {
-    override val key = "Coil"
+    override val key = "Spring.Coil"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -71,7 +71,7 @@ class CoilSpringStyle : RefreshIndicatorStyle {
 // ─── 3. Bouncing ball ────────────────────────────────────────────────────────
 
 class BouncingBallSpringStyle : RefreshIndicatorStyle {
-    override val key = "Ball"
+    override val key = "Spring.Ball"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -92,7 +92,7 @@ class BouncingBallSpringStyle : RefreshIndicatorStyle {
 // ─── 4. Elastic bar ──────────────────────────────────────────────────────────
 
 class ElasticBarSpringStyle : RefreshIndicatorStyle {
-    override val key = "Bar"
+    override val key = "Spring.Bar"
     override val requiredAnims = emptySet<AnimSlot>()
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -109,7 +109,7 @@ class ElasticBarSpringStyle : RefreshIndicatorStyle {
 // ─── 5. Trampoline arc ───────────────────────────────────────────────────────
 
 class TrampolineSpringStyle : RefreshIndicatorStyle {
-    override val key = "Trampoline"
+    override val key = "Spring.Trampoline"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -130,7 +130,7 @@ class TrampolineSpringStyle : RefreshIndicatorStyle {
 // ─── 6. Star burst ───────────────────────────────────────────────────────────
 
 class StarBurstSpringStyle : RefreshIndicatorStyle {
-    override val key = "Star"
+    override val key = "Spring.Star"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -154,7 +154,7 @@ class StarBurstSpringStyle : RefreshIndicatorStyle {
 // ─── 7. Concentric rings ─────────────────────────────────────────────────────
 
 class ConcentricSpringStyle : RefreshIndicatorStyle {
-    override val key = "Rings"
+    override val key = "Spring.Rings"
     override val requiredAnims = emptySet<AnimSlot>()
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -171,7 +171,7 @@ class ConcentricSpringStyle : RefreshIndicatorStyle {
 // ─── 8. Jelly ────────────────────────────────────────────────────────────────
 
 class JellySpringStyle : RefreshIndicatorStyle {
-    override val key = "Jelly"
+    override val key = "Spring.Jelly"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -189,7 +189,7 @@ class JellySpringStyle : RefreshIndicatorStyle {
 // ─── 9. Pendulum ─────────────────────────────────────────────────────────────
 
 class PendulumSpringStyle : RefreshIndicatorStyle {
-    override val key = "Pendulum"
+    override val key = "Spring.Pendulum"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -209,7 +209,7 @@ class PendulumSpringStyle : RefreshIndicatorStyle {
 // ─── 10. Rubber band ─────────────────────────────────────────────────────────
 
 class RubberBandSpringStyle : RefreshIndicatorStyle {
-    override val key = "Rubber"
+    override val key = "Spring.Rubber"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {

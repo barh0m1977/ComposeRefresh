@@ -11,65 +11,65 @@ import com.ibrahim.composescrollrefresh.styles.wave.*
  *
  * Pass any style from this registry directly to your composable:
  * ```kotlin
- * SwipeRefresh(style = RefreshIndicatorRegistry.wave.classicWave) { ... }
+ * SwipeRefresh(style = RefreshIndicatorRegistry.Wave.classicWave) { ... }
  * ```
  *
  * ── Wave ──────────────────────────────────────────────
- *  [wave.classicWave]        Classic rolling wave
- *  [wave.doubleWave]         Two stacked waves
- *  [wave.strokeWave]         Outlined/stroke wave
- *  [wave.zigzagWave]         Zigzag line wave
- *  [wave.rippleWave]         Expanding ripple rings
- *  [wave.squareWave]         Square/pulse wave
- *  [wave.bouncingDotsWave]   Row of bouncing dots
- *  [wave.layeredWave]        Multiple layered waves
- *  [wave.cosineWave]         Smooth cosine curve
- *  [wave.reverseWave]        Wave that plays in reverse
+ *  [Wave.classicWave]        Classic rolling Wave
+ *  [Wave.doubleWave]         Two stacked waves
+ *  [Wave.strokeWave]         Outlined/stroke Wave
+ *  [Wave.zigzagWave]         Zigzag line Wave
+ *  [Wave.rippleWave]         Expanding ripple rings
+ *  [Wave.squareWave]         Square/pulse Wave
+ *  [Wave.bouncingDotsWave]   Row of bouncing dots
+ *  [Wave.layeredWave]        Multiple layered waves
+ *  [Wave.cosineWave]         Smooth cosine curve
+ *  [Wave.reverseWave]        Wave that plays in reverse
  *
  * ── Bubble ────────────────────────────────────────────
- *  [bubble.classicBubble]    Single rising bubble
- *  [bubble.gridBubble]       Grid of pulsing bubbles
- *  [bubble.ringsBubble]      Expanding concentric rings
- *  [bubble.confettiBubble]   Colorful confetti burst
- *  [bubble.pulseBubble]      Single pulsing bubble
- *  [bubble.clusterBubble]    Cluster of bubbles
- *  [bubble.lavaLampBubble]   Lava-lamp blob motion
- *  [bubble.snowfallBubble]   Falling snowflakes
- *  [bubble.spiralBubble]     Spiral particle trail
- *  [bubble.heartbeatBubble]  Heartbeat pulse effect
+ *  [Bubble.classicBubble]    Single rising Bubble
+ *  [Bubble.gridBubble]       Grid of pulsing bubbles
+ *  [Bubble.ringsBubble]      Expanding concentric rings
+ *  [Bubble.confettiBubble]   Colorful confetti burst
+ *  [Bubble.pulseBubble]      Single pulsing Bubble
+ *  [Bubble.clusterBubble]    Cluster of bubbles
+ *  [Bubble.lavaLampBubble]   Lava-lamp blob motion
+ *  [Bubble.snowfallBubble]   Falling snowflakes
+ *  [Bubble.spiralBubble]     Spiral particle trail
+ *  [Bubble.heartbeatBubble]  Heartbeat pulse effect
  *
  * ── Spring ────────────────────────────────────────────
- *  [spring.classicSpring]       Classic coil spring
- *  [spring.coilSpring]          Tight coil animation
- *  [spring.bouncingBallSpring]  Ball bouncing on spring
- *  [spring.elasticBarSpring]    Elastic bar stretch
- *  [spring.trampolineSpring]    Trampoline bounce
- *  [spring.starBurstSpring]     Star burst on release
- *  [spring.concentricSpring]    Concentric ring spring
- *  [spring.jellySpring]         Jelly wobble
- *  [spring.pendulumSpring]      Swinging pendulum
- *  [spring.rubberBandSpring]    Rubber band snap
+ *  [Spring.classicSpring]       Classic coil Spring
+ *  [Spring.coilSpring]          Tight coil animation
+ *  [Spring.bouncingBallSpring]  Ball bouncing on Spring
+ *  [Spring.elasticBarSpring]    Elastic bar stretch
+ *  [Spring.trampolineSpring]    Trampoline bounce
+ *  [Spring.starBurstSpring]     Star burst on release
+ *  [Spring.concentricSpring]    Concentric ring Spring
+ *  [Spring.jellySpring]         Jelly wobble
+ *  [Spring.pendulumSpring]      Swinging pendulum
+ *  [Spring.rubberBandSpring]    Rubber band snap
  *
  * ── Advanced ──────────────────────────────────────────
- *  [advanced.classicAdvanced]    Spinning arc (Material-like)
- *  [advanced.dualArcAdvanced]    Two counter-rotating arcs
- *  [advanced.dotsCircleAdvanced] Dots arranged in a circle
- *  [advanced.clockAdvanced]      Clock hand sweep
- *  [advanced.segmentsAdvanced]   Rotating dashed segments
- *  [advanced.radarAdvanced]      Radar sweep
- *  [advanced.growingArcAdvanced] Arc that grows then resets
- *  [advanced.tripleArcAdvanced]  Three nested arcs
- *  [advanced.orbitAdvanced]      Orbiting dot
- *  [advanced.materialAdvanced]   Material Design spinner
+ *  [Advanced.classicAdvanced]    Spinning arc (Material-like)
+ *  [Advanced.dualArcAdvanced]    Two counter-rotating arcs
+ *  [Advanced.dotsCircleAdvanced] Dots arranged in a circle
+ *  [Advanced.clockAdvanced]      Clock hand sweep
+ *  [Advanced.segmentsAdvanced]   Rotating dashed segments
+ *  [Advanced.radarAdvanced]      Radar sweep
+ *  [Advanced.growingArcAdvanced] Arc that grows then resets
+ *  [Advanced.tripleArcAdvanced]  Three nested arcs
+ *  [Advanced.orbitAdvanced]      Orbiting dot
+ *  [Advanced.materialAdvanced]   Material Design spinner
  *
  * ── Fire ──────────────────────────────────────────────
- *  [fire.fireFlicker]        Flickering flame
+ *  [Fire.fireFlicker]        Flickering flame
  *
  * ─── HOW TO ADD A NEW STYLE ───────────────────────────
  *  Option A – existing category:
- *    1. Create MyNewWaveStyle.kt in styles/wave/
+ *    1. Create MyNewWaveStyle.kt in styles/Wave/
  *    2. Implement [RefreshIndicatorStyle]
- *    3. Add a val to the [wave] object below + one line to this KDoc.
+ *    3. Add a val to the [Wave] object below + one line to this KDoc.
  *
  *  Option B – new category:
  *    1. Create a new styles/mycat/ package
@@ -79,7 +79,7 @@ import com.ibrahim.composescrollrefresh.styles.wave.*
  */
 object RefreshIndicatorRegistry {
 
-    object wave {
+    object Wave {
         val classicWave        = ClassicWaveStyle()
         val doubleWave         = DoubleWaveStyle()
         val strokeWave         = StrokeWaveStyle()
@@ -92,7 +92,7 @@ object RefreshIndicatorRegistry {
         val reverseWave        = ReverseWaveStyle()
     }
 
-    object bubble {
+    object Bubble {
         val classicBubble   = ClassicBubbleStyle()
         val gridBubble      = GridBubbleStyle()
         val ringsBubble     = RingsBubbleStyle()
@@ -105,7 +105,7 @@ object RefreshIndicatorRegistry {
         val heartbeatBubble = HeartbeatBubbleStyle()
     }
 
-    object spring {
+    object Spring {
         val classicSpring       = ClassicSpringStyle()
         val coilSpring          = CoilSpringStyle()
         val bouncingBallSpring  = BouncingBallSpringStyle()
@@ -118,7 +118,7 @@ object RefreshIndicatorRegistry {
         val rubberBandSpring    = RubberBandSpringStyle()
     }
 
-    object advanced {
+    object Advanced {
         val classicAdvanced     = ClassicAdvancedStyle()
         val dualArcAdvanced     = DualArcAdvancedStyle()
         val dotsCircleAdvanced  = DotsCircleAdvancedStyle()
@@ -131,7 +131,7 @@ object RefreshIndicatorRegistry {
         val materialAdvanced    = MaterialAdvancedStyle()
     }
 
-    object fire {
+    object Fire {
         val fireFlicker = FireFlickerStyle()
     }
 
@@ -139,10 +139,10 @@ object RefreshIndicatorRegistry {
     data class Category(val name: String, val styles: List<RefreshIndicatorStyle>)
 
     val categories: List<Category> = listOf(
-        Category("Wave",     wave.run     { listOf(classicWave, doubleWave, strokeWave, zigzagWave, rippleWave, squareWave, bouncingDotsWave, layeredWave, cosineWave, reverseWave) }),
-        Category("Bubble",   bubble.run   { listOf(classicBubble, gridBubble, ringsBubble, confettiBubble, pulseBubble, clusterBubble, lavaLampBubble, snowfallBubble, spiralBubble, heartbeatBubble) }),
-        Category("Spring",   spring.run   { listOf(classicSpring, coilSpring, bouncingBallSpring, elasticBarSpring, trampolineSpring, starBurstSpring, concentricSpring, jellySpring, pendulumSpring, rubberBandSpring) }),
-        Category("Advanced", advanced.run { listOf(classicAdvanced, dualArcAdvanced, dotsCircleAdvanced, clockAdvanced, segmentsAdvanced, radarAdvanced, growingArcAdvanced, tripleArcAdvanced, orbitAdvanced, materialAdvanced) }),
-        Category("Fire",     fire.run     { listOf(fireFlicker) }),
+        Category("Wave",     Wave.run     { listOf(classicWave, doubleWave, strokeWave, zigzagWave, rippleWave, squareWave, bouncingDotsWave, layeredWave, cosineWave, reverseWave) }),
+        Category("Bubble",   Bubble.run   { listOf(classicBubble, gridBubble, ringsBubble, confettiBubble, pulseBubble, clusterBubble, lavaLampBubble, snowfallBubble, spiralBubble, heartbeatBubble) }),
+        Category("Spring",   Spring.run   { listOf(classicSpring, coilSpring, bouncingBallSpring, elasticBarSpring, trampolineSpring, starBurstSpring, concentricSpring, jellySpring, pendulumSpring, rubberBandSpring) }),
+        Category("Advanced", Advanced.run { listOf(classicAdvanced, dualArcAdvanced, dotsCircleAdvanced, clockAdvanced, segmentsAdvanced, radarAdvanced, growingArcAdvanced, tripleArcAdvanced, orbitAdvanced, materialAdvanced) }),
+        Category("Fire",     Fire.run     { listOf(fireFlicker) }),
     )
 }

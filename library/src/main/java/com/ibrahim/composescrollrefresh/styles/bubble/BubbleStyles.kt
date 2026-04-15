@@ -31,7 +31,7 @@ private fun DrawScope.color() = androidx.compose.ui.graphics.Color(0xFF625B71)
 // ─── 1. Classic ──────────────────────────────────────────────────────────────
 
 class ClassicBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Classic"
+    override val key = "Bubble.Classic"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -49,7 +49,7 @@ class ClassicBubbleStyle : RefreshIndicatorStyle {
 // ─── 2. Grid pop ─────────────────────────────────────────────────────────────
 
 class GridBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Grid"
+    override val key = "Bubble.Grid"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -69,7 +69,7 @@ class GridBubbleStyle : RefreshIndicatorStyle {
 // ─── 3. Expanding rings ──────────────────────────────────────────────────────
 
 class RingsBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Rings"
+    override val key = "Bubble.Rings"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -87,7 +87,7 @@ class RingsBubbleStyle : RefreshIndicatorStyle {
 // ─── 4. Confetti ─────────────────────────────────────────────────────────────
 
 class ConfettiBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Confetti"
+    override val key = "Bubble.Confetti"
     override val requiredAnims = setOf(AnimSlot.PHASE_1000, AnimSlot.FLOAT_3000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -105,7 +105,7 @@ class ConfettiBubbleStyle : RefreshIndicatorStyle {
 // ─── 5. Pulse ────────────────────────────────────────────────────────────────
 
 class PulseBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Pulse"
+    override val key = "Bubble.Pulse"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -121,7 +121,7 @@ class PulseBubbleStyle : RefreshIndicatorStyle {
 // ─── 6. Orbit cluster ────────────────────────────────────────────────────────
 
 class ClusterBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Cluster"
+    override val key =" Bubble.Cluster"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -141,7 +141,7 @@ class ClusterBubbleStyle : RefreshIndicatorStyle {
 // ─── 7. Lava lamp ────────────────────────────────────────────────────────────
 
 class LavaLampBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Lava"
+    override val key = "Bubble.Lava"
     override val requiredAnims = setOf(AnimSlot.FLOAT_3000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -159,7 +159,7 @@ class LavaLampBubbleStyle : RefreshIndicatorStyle {
 // ─── 8. Snowfall ─────────────────────────────────────────────────────────────
 
 class SnowfallBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Snow"
+    override val key = "Bubble.Snow"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000, AnimSlot.PHASE_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -177,7 +177,7 @@ class SnowfallBubbleStyle : RefreshIndicatorStyle {
 // ─── 9. Spiral ───────────────────────────────────────────────────────────────
 
 class SpiralBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Spiral"
+    override val key = "Bubble.Spiral"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -197,7 +197,7 @@ class SpiralBubbleStyle : RefreshIndicatorStyle {
 // ─── 10. Heartbeat ───────────────────────────────────────────────────────────
 
 class HeartbeatBubbleStyle : RefreshIndicatorStyle {
-    override val key = "Heartbeat"
+    override val key = "Bubble.Heartbeat"
     override val requiredAnims = setOf(AnimSlot.FLOAT_2000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {

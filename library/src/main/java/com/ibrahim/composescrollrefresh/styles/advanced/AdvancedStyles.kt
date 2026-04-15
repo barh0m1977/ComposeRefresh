@@ -42,7 +42,7 @@ class ClassicAdvancedStyle : RefreshIndicatorStyle {
 // ─── 2. Dual arcs ────────────────────────────────────────────────────────────
 
 class DualArcAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Dual"
+    override val key = "Advanced.Dual"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000, AnimSlot.ROTATION_1400)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -56,7 +56,7 @@ class DualArcAdvancedStyle : RefreshIndicatorStyle {
 // ─── 3. Dots circle ──────────────────────────────────────────────────────────
 
 class DotsCircleAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Dots"
+    override val key = "Advanced.Dots"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -74,7 +74,7 @@ class DotsCircleAdvancedStyle : RefreshIndicatorStyle {
 // ─── 4. Clock ────────────────────────────────────────────────────────────────
 
 class ClockAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Clock"
+    override val key = "Advanced.Clock"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -91,7 +91,7 @@ class ClockAdvancedStyle : RefreshIndicatorStyle {
 // ─── 5. Segments ─────────────────────────────────────────────────────────────
 
 class SegmentsAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Segments"
+    override val key = "Advanced.Segments"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -109,7 +109,7 @@ class SegmentsAdvancedStyle : RefreshIndicatorStyle {
 // ─── 6. Radar ────────────────────────────────────────────────────────────────
 
 class RadarAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Radar"
+    override val key = "Advanced.Radar"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -126,7 +126,7 @@ class RadarAdvancedStyle : RefreshIndicatorStyle {
 // ─── 7. Growing arc ──────────────────────────────────────────────────────────
 
 class GrowingArcAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Growing"
+    override val key = "Advanced.Growing"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000, AnimSlot.PULSE_1200)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -139,7 +139,7 @@ class GrowingArcAdvancedStyle : RefreshIndicatorStyle {
 // ─── 8. Triple arc ───────────────────────────────────────────────────────────
 
 class TripleArcAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Triple"
+    override val key = "Advanced.Triple"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000, AnimSlot.ROTATION_1400, AnimSlot.ROTATION_700)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -157,7 +157,7 @@ class TripleArcAdvancedStyle : RefreshIndicatorStyle {
 // ─── 9. Orbit ────────────────────────────────────────────────────────────────
 
 class OrbitAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Orbit"
+    override val key = "Advanced.Orbit"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {
@@ -172,7 +172,7 @@ class OrbitAdvancedStyle : RefreshIndicatorStyle {
 // ─── 10. Material indeterminate ──────────────────────────────────────────────
 
 class MaterialAdvancedStyle : RefreshIndicatorStyle {
-    override val key = "Material"
+    override val key = "Advanced.Material"
     override val requiredAnims = setOf(AnimSlot.ROTATION_1000, AnimSlot.PULSE_1200)
 
     override fun DrawScope.draw(refreshState: RefreshScrollState, animState: IndicatorAnimState) {

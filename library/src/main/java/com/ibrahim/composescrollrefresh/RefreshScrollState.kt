@@ -20,6 +20,7 @@ import androidx.compose.runtime.setValue
 class RefreshScrollState(
     val refreshThreshold: Float,
     val refreshingThreshold: Float,
+    private val animationsEnabled: Boolean = true
 ) {
     /**
      * The current distance pulled in pixels.
@@ -52,7 +53,7 @@ class RefreshScrollState(
      */
     internal suspend fun onPull(delta: Float): Float {
         if (isRefreshing) return 0f
-        
+
         // Apply some resistance/friction to the pull
         val resistance = 0.5f
         val newDistance = (pullDistance + delta * resistance).coerceAtLeast(0f)
@@ -80,15 +81,22 @@ class RefreshScrollState(
      * Animates the pull distance to the refreshing threshold.
      */
     internal suspend fun animateToRefreshing() {
-        _pullDistance.animateTo(refreshingThreshold)
+        if (animationsEnabled) {
+            _pullDistance.animateTo(refreshingThreshold)
+        } else {
+            _pullDistance.snapTo(refreshingThreshold)
+        }
     }
 
     /**
      * Animates the pull distance back to zero.
      */
     internal suspend fun animateToZero() {
-        _pullDistance.animateTo(0f)
-    }
+        if (animationsEnabled) {
+            _pullDistance.animateTo(0f)
+        } else {
+            _pullDistance.snapTo(0f)
+        }    }
 
     /**
      * Resets the state after a refresh has finished.
